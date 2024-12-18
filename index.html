@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Cards</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="filterCards('all')">All</button>
+        <button onclick="filterCards('dog')">Dog [&#128054]</button>
+        <button onclick="filterCards('cat')">Cat [&#128008]</button>
+        <button onclick="filterCards('bird')">Bird [&#128330]</button>
+    </div>
+
+    <div class="cards" id="card-container">
+        <div class="card dog">
+            <img src="Dogs photos/dog.1.jpg " alt="Dog">
+            <h3>Dog 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque libero non fuga alias ipsa laudantium temporibus aperiam corrupti facere.</p>
+        </div>
+        <div class="card dog">
+            <img src="Dogs photos/dog.2.jpg" alt="Dog">
+            <h3>Dog 2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor soluta ratione ea unde harum, perspiciatis iusto voluptates aut accusamus a?</p>
+        </div>
+        <div class="card dog">
+            <img src="Dogs photos/dog.3.jpg" alt="Dog">
+            <h3>Dog 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit reprehenderit assumenda eum quisquam similique error deserunt enim obcaecati dolores!</p>
+        </div>
+        <div class="card dog">
+            <img src="Dogs photos/dog.4.avif" alt="Dog">
+            <h3>Dog 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et sapiente repudiandae soluta esse sit a quaerat fuga! Dignissimos, vel.</p>
+        </div>
+        <div class="card dog">
+            <img src="Dogs photos/dog.5.jpg" alt="Dog">
+            <h3>Dog 5</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi obcaecati alias veritatis placeat voluptates fugit consequatur a quibusdam reiciendis optio!</p>
+        </div>
+        <div class="card dog">
+            <img src="Dogs photos/dog.6.jpg" alt="Dog">
+            <h3>Dog 6</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum sed quae, optio et eveniet iste praesentium facere veritatis? Aut.</p>
+        </div>
+        <div class="card dog">
+            <img src="Dogs photos/dog.7.png" alt="Dog">
+            <h3>Dog 7</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi nobis doloribus nesciunt ducimus ipsam quidem iure delectus libero similique.</p>
+        </div>
+        <div class="card dog">
+            <img src="Dogs photos/dog.8.jpg" alt="Dog">
+            <h3>Dog 8</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur a non deleniti veritatis illo, quam sit! Minus, soluta rerum?</p>
+        </div>
+        <div class="card dog">
+            <img src="Dogs photos/dog.9.webp" alt="Dog">
+            <h3>Dog 9</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequatur beatae sunt molestiae magni earum deserunt rem. Minima, ipsum aut.</p>
+        </div>
+        <div class="card dog">
+            <img src="Dogs photos/dog.10.jpg" alt="Dog">
+            <h3>Dog 10</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, nobis magnam voluptas blanditiis numquam illo ipsam ipsa est eos id!</p>
+        </div>
+
+        <div class="card cat">
+            <img src="cats photos/cat.01.jpg" alt="Cat">
+            <h3>Cat 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel eum quibusdam eius aut quod officia consequuntur consequatur dicta voluptas quae?</p>
+        </div>
+        <div class="card cat">
+            <img src="cats photos/cat.02.jpg" alt="Cat">
+            <h3>Cat 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ut impedit fugiat nobis rerum, dolor facere itaque earum accusamus possimus!</p>
+        </div>
+        <div class="card cat">
+            <img src="cats photos/cat.03.jpeg" alt="Cat">
+            <h3>Cat 3</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, fuga aperiam. Veritatis alias exercitationem minima. Atque cumque quidem culpa nihil.</p>
+        </div>
+        <div class="card cat">
+            <img src="cats photos/cat.04.jpg" alt="Cat">
+            <h3>Cat 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magni iusto animi libero non? Quo amet et illum voluptate quaerat.</p>
+        </div>
+        <div class="card cat">
+            <img src="cats photos/cat.05.webp" alt="Cat">
+            <h3>Cat 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo illum repellat fugit a sit inventore aut fugiat saepe dolor.</p>
+        </div>
+        <div class="card cat">
+            <img src="cats photos/cat.06.jpeg" alt="Cat">
+            <h3>Cat 6</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda quibusdam perferendis consequuntur est suscipit eos repellendus nam ducimus natus!</p>
+        </div>
+        <div class="card cat">
+            <img src="cats photos/cat.07.jpg" alt="Cat">
+            <h3>Cat 7</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla obcaecati voluptate ipsa reprehenderit atque fuga porro! Repudiandae voluptates voluptate suscipit.</p>
+        </div>
+        <div class="card cat">
+            <img src="cats photos/cat.08.jpg" alt="Cat">
+            <h3>Cat 8</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et sequi ipsa sint quam perferendis autem necessitatibus quisquam, non sapiente repellat?</p>
+        </div>
+        <div class="card cat">
+            <img src="cats photos/cat.09.webp" alt="Cat">
+            <h3>Cat 9</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae debitis optio magnam unde aliquam vitae dolores reprehenderit, atque doloremque amet!</p>
+        </div>
+        <div class="card cat">
+            <img src="cats photos/cat.10.webp" alt="Cat">
+            <h3>Cat 10</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, harum officiis excepturi nesciunt sint laborum cupiditate perferendis tenetur fuga ipsa.</p>
+        </div>
+
+        <div class="card bird">
+            <img src="Birds photos/bird,1.jpg" alt="Bird">
+            <h3>Bird 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed non maiores ratione omnis facere excepturi recusandae distinctio saepe adipisci quidem?</p>
+        </div>
+        <div class="card bird">
+            <img src="Birds photos/bird.2.jpeg" alt="Bird">
+            <h3>Bird 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel a totam quidem doloribus vero illum eos. Minima, asperiores dicta.</p>
+        </div>
+        <div class="card bird">
+            <img src="Birds photos/bird.3.jpg" alt="Bird">
+            <h3>Bird 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae amet corporis maiores corrupti sunt quisquam fugiat aut debitis nobis.</p>
+        </div>
+        <div class="card bird">
+            <img src="Birds photos/bird.4.avif" alt="Bird">
+            <h3>Bird 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam, fugiat consequatur quibusdam iure excepturi eum officiis maiores quas possimus.</p>
+        </div>
+        <div class="card bird">
+            <img src="Birds photos/bird.5.jpg" alt="Bird">
+            <h3>Bird 5</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut ullam error tempore earum iusto dignissimos quo harum fugit eligendi.</p>
+        </div>
+    </div>
+
+    <!--pagination-->
+    <div class="pagination" id="pagination">
+        <a href="#" id="prev">Previous</a>
+        <a href="#" class="page-link" data-page = "1">1</a>
+        <a href="#" class="page-link" data-page = "2">2</a>
+        <a href="#" class="page-link" data-page = "3">3</a>
+        <a href="#" id="next">Next</a>
+        <p id="page-numbers"></p>
+    </div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

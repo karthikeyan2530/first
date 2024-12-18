@@ -1,0 +1,140 @@
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    background-color: #655b60cf;
+}
+
+.buttons {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #271010;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 48%);
+}
+
+.buttons button:hover {
+    background-color: #2980b9;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    overflow: hidden;
+    background-color: #b1b14196;
+    text-align: center;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(197, 197, 197, 0.83);
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.pagination a {
+    color: #fff;
+    padding: 5px 16px;
+    text-decoration: none;
+    border: 1px solid #000000d2;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+#page-numbers {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .buttons {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .buttons button {
+        margin-right: 0;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    .card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .pagination a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    #page-numbers {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 280px;
+        margin: 0 auto 20px;
+        padding: 15px;
+    }
+
+    .pagination a {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    #page-numbers {
+        font-size: 12px;
+    }
+}
